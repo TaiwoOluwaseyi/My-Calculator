@@ -20,7 +20,35 @@ const btnEqual = document.querySelector("#btnEqual");
 const btnInput = document.querySelector("#btnInput");
 
 
-console.log(btnAdd);
+
+// btn1.addEventListener("click", () => {
+    // btnInput.value = btnInput.value + "1";
+// })
+
+const numberButtons = document.querySelectorAll(".btn-num");
+
+ for(const numberButton of numberButtons) {
+    numberButton.addEventListener("click", () => {
+        btnInput.value = btnInput.value + numberButton.value;
+    })
+ }
+
+ const numberButtons2 = document.querySelectorAll(".btn-num2");
+
+ for(const numberButton2 of numberButtons2) {
+    numberButton2.addEventListener("click", () => {
+        btnInput.value = btnInput.value + numberButton2.value;
+    })
+ }
+
+
+
+
+
+
+
+
+// console.log(btnAdd);
 
 
 
